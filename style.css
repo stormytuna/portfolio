@@ -1,0 +1,67 @@
+.navbar-brand {
+  font-family: "Roboto Mono", serif;
+}
+
+.nav-link {
+  font-family: "Roboto Mono", serif;
+}
+
+.navbar-link {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-link img {
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  background: url(assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main h2 {
+  font-size: x-large;
+}
+
+main h3 {
+  font-size: large;
+}
+
+main p {
+  font-size: medium;
+}
+
+main span {
+  font-size: large;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+}
+
+.project-card h2 {
+  font-size: medium;
+}
+
+.project-card p {
+  height: 200px;
+}
+
+.project-card a img {
+  width: 30px;
+  height: 30px;
+}
+
+.project-card .tech-stack-logos {
+  height: 50px;
+}
+
+.project-card .tech-stack-logos img {
+  height: 100%;
+}
