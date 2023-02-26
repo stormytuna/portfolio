@@ -41,8 +41,7 @@ main span {
 }
 
 .project-card {
-  width: 300px;
-  height: 500px;
+  max-width: 500px;
 }
 
 .project-card h2 {
@@ -53,9 +52,13 @@ main span {
   height: 200px;
 }
 
-.project-card a img {
-  width: 30px;
-  height: 30px;
+.tech-stack-list {
+  list-style-type: none;
+}
+
+.accordion-logo {
+  width: 80px;
+  height: 80px;
 }
 
 .project-card .tech-stack-logos {
