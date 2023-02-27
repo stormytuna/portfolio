@@ -48,7 +48,7 @@
 		<main class="container-md">
 			<h2 class="p-1 pt-4">Hello there!</h2>
 			<h3 class="p-1">About me:</h3>
-			<p class="px-3">I'm an aspiring software engineer, with projects covering Node, React, Vue.js, PSQL and MongoDB. I love writing code, solving problems and helping others do the same.</p>
+			<p class="px-3">I'm an aspiring software engineer, with projects covering all sorts of tech stacks. I love writing code, solving problems and helping others do the same.</p>
 			<p class="px-3">
 				Outside of work, I like to play piano, make Terraria mods, and play video games with my friends. I'm also active within the tModLoader community, helping other people create their own Terraria
 				mods.
@@ -56,40 +56,21 @@
 		</main>
 
 		<div class="d-flex justify-content-center flex-wrap m-4">
-			<div class="project-card border shadow-sm bg-body-secondary m-1 p-2 rounded-4">
-				<div class="header d-flex justify-content-around p-2">
-					<a class="rounded-circle" href="https://github.com/stormytuna/fe-nc-games" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="GitHub repo"
-						><img src="assets/github-logo.png" alt="GitHub logo"
-					/></a>
-					<h2 class="text-center border-bottom border-2">Full stack solo project</h2>
-					<a
-						class="rounded-circle"
-						href="https://glittery-semifreddo-4c7462.netlify.app/?sort_by=votes&order=desc"
-						data-bs-toggle="tooltip"
-						data-bs-placement="right"
-						data-bs-custom-class="custom-tooltip"
-						data-bs-title="Hosted app"
-						><img src="assets/netlify-logo.png" alt="Netlify logo"
-					/></a>
-				</div>
-				<img src="assets/fe-nc-games-ss.png" alt="Home page layout" class="img-fluid rounded-3" />
-				<p>
-					This is a website for hosting board game reviews. It allows users to browse reviews, sort and order them, upvote and downvote reviews, add their own review and view and add comments to
-					existing reviews.
-				</p>
-				<div class="tech-stack-logos d-flex justify-content-around">
-					<img src="assets/react-logo.png" alt="React logo" />
-					<img src="assets/axios-logo.png" alt="Axios logo" />
-				</div>
-			</div>
+
+      <!-- PROJECT CARDS -->
 
 			<div class="card">
 				<img src="assets/fe-nc-games-ss.png" class="card-img-top" alt="Homepage layout of fe-nc-games" />
 				<div class="card-body">
 					<h2 class="card-title">fe-nc-games</h2>
 					<p class="card-text fs-4">
-						This is a website for hosting board game reviews. It allows users to browse reviews, sort and order them, upvote and downvote reviews, add their own review and view and add comments to
-						existing reviews.
+						This is a full stack project I made as part of Northcoders software engineering bootcamp, a dummy board game reviews website.
+						<br />
+						On the front end, users will land on the pictured page - a list of board game reviews and some extra information about them. Users can sort by category, order the results and vote on
+						reviews. They can also click on the title of any given review to be taken to another page where they can view comments and add their own comments. It doesn't have a login feature however,
+						so it's hardcoded to treat all users as "jessjelly" for interactions that require one.
+						<br />
+						The backend is just a standard API. A handful of CRUD endpoints that act as a middleman between the user and the database.
 					</p>
 					<div class="accordion accordion-flush" id="fe-nc-games-accordion">
 						<div class="accordion-item">
@@ -106,9 +87,12 @@
 								</button>
 							</h2>
 							<div id="fe-nc-games-tech-stack-body" class="accordion-collapse collapse" aria-labelledby="fe-nc-games-tech-stack-heading" data-bs-parent="#fe-nc-games-accordion">
-								<div class="accordion-body d-flex justify-content-around">
+								<div class="accordion-body d-flex justify-content-around flex-wrap">
 									<img class="accordion-logo p-2" src="assets/react-logo.png" alt="React logo" />
 									<img class="accordion-logo p-2" src="assets/axios-logo.png" alt="Axios logo" />
+									<img class="accordion-logo p-2" src="assets/express-logo.png" alt="Express logo" />
+									<img class="accordion-logo p-2" src="assets/elephant-sql-logo.png" alt="ElephantSQL logo" />
+									<img class="accordion-logo p-2" src="assets/jest-logo.png" alt="Jest logo" />
 								</div>
 							</div>
 						</div>
@@ -131,19 +115,37 @@
 										class="rounded-circle"
 										href="https://github.com/stormytuna/fe-nc-games"
 										data-bs-toggle="tooltip"
-										data-bs-placement="left"
+										data-bs-placement="top"
 										data-bs-custom-class="custom-tooltip"
-										data-bs-title="GitHub repo"
+										data-bs-title="Front end repo"
+										><img class="accordion-logo" src="assets/github-logo.png" alt="GitHub logo"
+									/></a>
+									<a
+										class="rounded-circle"
+										href="https://github.com/stormytuna/be-nc-games"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Back end repo"
 										><img class="accordion-logo" src="assets/github-logo.png" alt="GitHub logo"
 									/></a>
 									<a
 										class="rounded-circle"
 										href="https://glittery-semifreddo-4c7462.netlify.app/?sort_by=votes&order=desc"
 										data-bs-toggle="tooltip"
-										data-bs-placement="right"
+										data-bs-placement="top"
 										data-bs-custom-class="custom-tooltip"
 										data-bs-title="Hosted app"
 										><img class="accordion-logo" src="assets/netlify-logo.png" alt="Netlify logo"
+									/></a>
+									<a
+										class="rounded-circle"
+										href="https://be-nc-games.onrender.com/api"
+										data-bs-toggle="tooltip"
+										data-bs-placement="top"
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Hosted API"
+										><img class="accordion-logo" src="assets/json-logo.png" alt="JSON logo"
 									/></a>
 								</div>
 							</div>
@@ -152,128 +154,164 @@
 				</div>
 			</div>
 
-			<div class="project-card border shadow-sm bg-body-secondary m-1 p-2 rounded-4">
-				<div class="header d-flex justify-content-around p-2">
-					<a class="rounded-circle" href="https://github.com/stormytuna/be-nc-games" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="GitHub repo"
-						><img src="assets/github-logo.png"
-					/></a>
-					<h2 class="text-center border-bottom border-2">Back end solo project</h2>
-					<a class="rounded-circle" href="https://be-nc-games.onrender.com/api" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Hosted API"
-						><img src="assets/json-logo.png"
-					/></a>
-				</div>
-				<img src="assets/be-nc-games-ss.png" alt="An image of JSON text from https://be-nc-games.onrender.com/api" class="img-fluid rounded-3" />
-				<p>
-					This is a back end API that provides endpoints for interacting with the database using CRUD operations. It uses a PostgreSQL database hosted by Elephant SQL, with Express to manage
-					endpoints.
-				</p>
-				<div class="tech-stack-logos d-flex justify-content-around">
-					<img src="assets/express-logo.png" alt="Express.js logo" />
-					<img src="assets/elephant-sql-logo.png" alt="Elephant SQL logo" />
-					<img src="assets/jest-logo.png" alt="Jest logo" />
-				</div>
-			</div>
+      <div class="card">
+        <img src="assets/reMOTe-ss.png" class="card-img-top" alt="Homepage layout of reMOTe" />
+        <div class="card-body">
+          <h2 class="card-title">reMOTe</h2>
+          <p class="card-text fs-4">
+            This is a full stack group project, also made as part of Northcoders software engineering bootcamp. Unlike the other project with Northcoders, we had to come up with the idea, plans and tickets ourselves. We ended up creating an app for users to find and book car services from technicians in their.
+            <br />
+            The front end has a mobile friendly and accessible interface, allowing users to quick search for a range of services or make their own refined search. They can also sort and order the resulting list of technicians. When a user has decided on a technician, they can tap or click them to book one of their services. Users can also leave reviews for a technicians they have booked services from. Users can also sign up as a technician and offer their own services and review other users.
+          </p>
+          <div class="accordion accordion-flush" id="reMOTe-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reMOTe-tech-stack-heading">
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#reMOTe-tech-stack-body" aria-expanded="false"
+                  aria-controls="reMOTe-tech-stack-body">
+                  Tech stack
+                </button>
+              </h2>
+              <div id="reMOTe-tech-stack-body" class="accordion-collapse collapse"
+                aria-labelledby="reMOTe-tech-stack-heading" data-bs-parent="#reMOTe-accordion">
+                <div class="accordion-body d-flex justify-content-around flex-wrap">
+                  <img class="accordion-logo p-2" src="assets/vue-js-logo.png" alt="Vue.js logo" />
+                  <img class="accordion-logo p-2" src="assets/bootstrap-logo.png" alt="Bootstrap logo" />
+									<img class="accordion-logo p-2" src="assets/axios-logo.png" alt="Axios logo" />
+                  <img class="accordion-logo p-2" src="assets/express-logo.png" alt="Express logo" />
+									<img class="accordion-logo p-2" src="assets/passport-js-logo.png" alt="Passport JS logo" />
+                  <img class="accordion-logo p-2" src="assets/jest-logo.png" alt="Jest logo" />
+                  <img class="accordion-logo p-2" src="assets/mongo-db-logo.png" alt="MongoDB logo" />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reMOTe-source-code-heading">
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#reMOTe-source-code-body" aria-expanded="false"
+                  aria-controls="reMOTe-source-code-body">
+                  Links
+                </button>
+              </h2>
+              <div id="reMOTe-source-code-body" class="accordion-collapse collapse"
+                aria-labelledby="reMOTe-source-code-heading" data-bs-parent="#reMOTe-accordion">
+                <div class="accordion-body d-flex justify-content-around">
+                  <a class="rounded-circle" href="https://github.com/stormytuna/fe-remote" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Front end repo"><img
+                      class="accordion-logo" src="assets/github-logo.png" alt="GitHub logo" /></a>
+                  <a class="rounded-circle" href="https://github.com/stormytuna/be-remote" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Back end repo"><img
+                      class="accordion-logo" src="assets/github-logo.png" alt="GitHub logo" /></a>
+                  <a class="rounded-circle" href="https://www.youtube.com/watch?v=P6jJMNLOucg&ab_channel=SanaGubari"
+                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Tech demo"><img class="accordion-logo" src="assets/youtube-logo.png"
+                      alt="Netlify logo" /></a>
+                  <a class="rounded-circle" href="https://remote-be.onrender.com/api" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Hosted API"><img
+                      class="accordion-logo" src="assets/json-logo.png" alt="JSON logo" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="project-card border shadow-sm bg-body-secondary m-1 p-2 rounded-4">
-				<div class="header d-flex justify-content-around p-2">
-					<a
-						class="rounded-circle"
-						href="https://github.com/stormytuna/reMOTe-fe"
-						data-bs-toggle="tooltip"
-						data-bs-placement="left"
-						data-bs-custom-class="custom-tooltip"
-						data-bs-title="Front end GitHub repo"
-						><img src="assets/github-logo.png"
-					/></a>
-					<h2 class="text-center border-bottom border-2">Full stack group project</h2>
-					<a
-						class="rounded-circle"
-						href="https://github.com/stormytuna/reMOTe-be"
-						data-bs-toggle="tooltip"
-						data-bs-placement="right"
-						data-bs-custom-class="custom-tooltip"
-						data-bs-title="Back end GitHub repo"
-						><img src="assets/github-logo.png"
-					/></a>
-				</div>
-				<img src="assets/reMOTe-ss.png" alt="An image of JSON test from https://be-nc-games.onrender.com/api" class="img-fluid rounded-3" />
-				<p>
-					This is reMOTe, a full stack application that allows users to view car technicians, book car services and review technicians they've booked before. It also allows technicians to sign up and
-					post the services they provide. This project was made as part of a software engineering bootcamp with Northcoders.
-					<a href="https://www.youtube.com/watch?v=P6jJMNLOucg&ab_channel=SanaGubari">Tech demo here</a>.
-				</p>
-				<div class="tech-stack-logos d-flex justify-content-around">
-					<img src="assets/express-logo.png" alt="Express.js logo" />
-					<img src="assets/mongo-db-logo.png" alt="MongoDB logo" />
-					<img src="assets/jest-logo.png" alt="Jest logo" />
-					<img src="assets/vue-js-logo.png" alt="Vue.js logo" />
-					<img src="assets/bootstrap-logo.png" alt="Bootstrap logo" />
-				</div>
-			</div>
+      <div class="card">
+        <img src="assets/minesweeper-ss.png" class="card-img-top" alt="Homepage layout of reMOTe" />
+        <div class="card-body">
+          <h2 class="card-title">Minesweeper</h2>
+          <p class="card-text fs-4">
+            This is a Minesweeper clone created in React. It features a timer and counters for revealed and flagged cells, as well as a game size option and a quick reset button. It's also responsive on mobile, with cells also being able to be revealed and flagged with touches instead of clicks. 
+          </p>
+          <div class="accordion accordion-flush" id="reMOTe-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reMOTe-tech-stack-heading">
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#reMOTe-tech-stack-body" aria-expanded="false" aria-controls="reMOTe-tech-stack-body">
+                  Tech stack
+                </button>
+              </h2>
+              <div id="reMOTe-tech-stack-body" class="accordion-collapse collapse" aria-labelledby="reMOTe-tech-stack-heading"
+                data-bs-parent="#reMOTe-accordion">
+                <div class="accordion-body d-flex justify-content-around flex-wrap">
+                  <img class="accordion-logo p-2" src="assets/react-logo.png" alt="React logo" />
+                  <img class="accordion-logo p-2" src="assets/bootstrap-logo.png" alt="Bootstrap logo" />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reMOTe-source-code-heading">
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#reMOTe-source-code-body" aria-expanded="false" aria-controls="reMOTe-source-code-body">
+                  Links
+                </button>
+              </h2>
+              <div id="reMOTe-source-code-body" class="accordion-collapse collapse"
+                aria-labelledby="reMOTe-source-code-heading" data-bs-parent="#reMOTe-accordion">
+                <div class="accordion-body d-flex justify-content-around">
+                  <a class="rounded-circle" href="https://github.com/stormytuna/react-app-minesweeper" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Source code"><img
+                      class="accordion-logo" src="assets/github-logo.png" alt="GitHub logo" /></a>
+                  <a class="rounded-circle" href="https://stormytuna.github.io/react-app-minesweeper/" data-bs-toggle="tooltip"
+                    data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Hosted app""><img
+                      class="accordion-logo" src="assets/github-logo.png" alt="GitHub logo" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="project-card border shadow-sm bg-body-secondary m-1 p-2 rounded-4">
-				<div class="header d-flex justify-content-around p-2">
-					<a
-						class="rounded-circle"
-						href="https://github.com/stormytuna/react-app-minesweeper"
-						data-bs-toggle="tooltip"
-						data-bs-placement="left"
-						data-bs-custom-class="custom-tooltip"
-						data-bs-title="Github repo"
-						><img src="assets/github-logo.png"
-					/></a>
-					<h2 class="text-center border-bottom border-2">React app Minesweeper</h2>
-					<a
-						class="rounded-circle"
-						href="https://stormytuna.github.io/react-app-minesweeper/"
-						data-bs-toggle="tooltip"
-						data-bs-placement="right"
-						data-bs-custom-class="custom-tooltip"
-						data-bs-title="Hosted app"
-						><img src="assets/github-logo.png"
-					/></a>
-				</div>
-				<img src="assets/minesweeper-ss.png" alt="An image of a game of Minesweeper" class="img-fluid rounded-3" />
-				<p>
-					This is a Minesweeper clone I created mostly in one day, with another extra few hours spent on polishing. It features a timer and counters for cells youve revealed and cells youve placed a
-					flag on. It also has a game size setting and a quick reset button.
-				</p>
-				<div class="tech-stack-logos d-flex justify-content-around">
-					<img src="assets/react-logo.png" alt="React logo" />
-					<img src="assets/bootstrap-logo.png" alt="Bootstrap logo" />
-				</div>
-			</div>
+      <div class="card">
+        <img src="assets/dummy-game-dev-blog-ss.png" class="card-img-top" alt="A JSON file" />
+        <div class="card-body">
+          <h2 class="card-title">Dummy game dev blog</h2>
+          <p class="card-text fs-4">
+            This is a RESTful Flask API I built to get some experience with Python. It provides users with simple endpoints to get, post, patch and delete blog posts and comments.
+          </p>
+          <div class="accordion accordion-flush" id="reMOTe-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reMOTe-tech-stack-heading">
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#reMOTe-tech-stack-body" aria-expanded="false" aria-controls="reMOTe-tech-stack-body">
+                  Tech stack
+                </button>
+              </h2>
+              <div id="reMOTe-tech-stack-body" class="accordion-collapse collapse" aria-labelledby="reMOTe-tech-stack-heading"
+                data-bs-parent="#reMOTe-accordion">
+                <div class="accordion-body d-flex justify-content-around flex-wrap">
+                  <img class="accordion-logo p-2" src="assets/python-logo.png" alt="Python logo" />
+                  <img class="accordion-logo p-2" src="assets/flask-logo.png" alt="Flask logo" />
+                  <img class="accordion-logo p-2" src="assets/elephant-sql-logo.png" alt="ElephantSQL logo" />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="reMOTe-source-code-heading">
+                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#reMOTe-source-code-body" aria-expanded="false" aria-controls="reMOTe-source-code-body">
+                  Links
+                </button>
+              </h2>
+              <div id="reMOTe-source-code-body" class="accordion-collapse collapse"
+                aria-labelledby="reMOTe-source-code-heading" data-bs-parent="#reMOTe-accordion">
+                <div class="accordion-body d-flex justify-content-around">
+                  <a class="rounded-circle" href="https://github.com/stormytuna/dummy-game-dev-blog"
+                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Source code"><img class="accordion-logo" src="assets/github-logo.png"
+                      alt="GitHub logo" /></a>
+                  <a class="rounded-circle" href="https://dummy-game-dev-blog.onrender.com/api/"
+                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Hosted API"><img
+                            class=" accordion-logo" src="assets/github-logo.png" alt="GitHub logo" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="project-card border shadow-sm bg-body-secondary m-1 p-2 rounded-4">
-				<div class="header d-flex justify-content-around p-2">
-					<a
-						class="rounded-circle"
-						href="https://github.com/stormytuna/dummy-game-dev-blog"
-						data-bs-toggle="tooltip"
-						data-bs-placement="left"
-						data-bs-custom-class="custom-tooltip"
-						data-bs-title="Github repo"
-						><img src="assets/github-logo.png"
-					/></a>
-					<h2 class="text-center border-bottom border-2">Dummy game development blog</h2>
-					<a
-						class="rounded-circle"
-						href="https://dummy-game-dev-blog.onrender.com/api/"
-						data-bs-toggle="tooltip"
-						data-bs-placement="right"
-						data-bs-custom-class="custom-tooltip"
-						data-bs-title="Hosted API"
-						><img src="assets/json-logo.png"
-					/></a>
-				</div>
-				<img src="assets/dummy-game-dev-blog-ss.png" alt="An image of JSON text from https://dummy-game-dev-blog.onrender.com/api/" class="img-fluid rounded-3" />
-				<p>This is a restful back end API I created to get familiar with Python. It provides users with simple endpoints to get, post, patch and delete blog posts and comments.</p>
-				<div class="tech-stack-logos d-flex justify-content-around">
-					<img src="assets/python-logo.png" alt="Python logo" />
-					<img src="assets/flask-logo.png" alt="Flask logo" />
-					<img src="assets/elephant-sql-logo.png" alt="Flask logo" />
-				</div>
-			</div>
+      <!-- END PROJECT CARDS -->
 		</div>
 
 		<!-- Bootstrap JS -->
