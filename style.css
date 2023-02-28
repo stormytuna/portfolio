@@ -17,7 +17,7 @@
 }
 
 body {
-  background: url(assets/background.jpg) no-repeat center center fixed;
+  background: url(assets/background-light.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,4 +35,18 @@ body {
 .accordion-logo {
   width: auto;
   height: 80px;
+}
+
+.dark-mode .dark-mode-background {
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.dark-mode .dark-mode-background-circle {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.navbar .dark-mode {
+  background-color: black;
 }
